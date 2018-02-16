@@ -1,12 +1,12 @@
 <?php
-
+/*
 $url = parse_url(getenv("DATABASE_URL"));
 
 $host = $url["host"];
 $username = $url["user"];
 $password = $url["pass"];
 $database = substr($url["path"], 1);
-
+*/
 return [
 
     /*
@@ -60,7 +60,7 @@ return [
             'strict' => true,
             'engine' => null,
         ],
-
+        /*
         'pgsql' => array(
             'driver'   => 'pgsql',
             'host'     => $host,
@@ -71,7 +71,8 @@ return [
             'prefix'   => '',
             'schema'   => 'public',
         ),
-        /*
+        */
+        
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),
@@ -84,7 +85,7 @@ return [
             'schema' => 'public',
             'sslmode' => 'prefer',
         ],
-        */
+        
 
         'sqlsrv' => [
             'driver' => 'sqlsrv',
