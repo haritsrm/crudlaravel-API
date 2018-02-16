@@ -10,11 +10,11 @@ use App\Book;
 | contains the "web" middleware group. Now create something great!
 |
 
-
+*/
 Route::get('/', function () {
     return view('welcome');
 });
-
+/*
 Route::get('books', function() {
     // If the Content-Type and Accept headers are set to 'application/json', 
     // this will return a JSON structure. This will be cleaned up later.
